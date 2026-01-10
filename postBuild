@@ -5,8 +5,8 @@ set -e
 pip install RISE
 
 # Enable RISE extensions
-jupyter-nbextension install rise --py --user
-jupyter-nbextension enable rise --py --user
+jupyter nbextension install rise --py --sys-prefix
+jupyter nbextension enable rise --py --sys-prefix
 
 # Verify installation
 jupyter nbextension list
