@@ -1,12 +1,8 @@
 #!/bin/bash
 set -e
 
-# Install and enable RISE properly
-pip install RISE
+# RISE should be auto-enabled when installed via conda
+# Just verify it's there
+python -c "import rise; print('RISE installed successfully')"
 
-# Enable RISE extensions
-jupyter nbextension install rise --py --sys-prefix
-jupyter nbextension enable rise --py --sys-prefix
-
-# Verify installation
-jupyter nbextension list
+echo "Setup complete"
