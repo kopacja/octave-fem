@@ -1,10 +1,14 @@
 name: octave-fem
 channels:
   - conda-forge
+  - defaults
 dependencies:
   - python=3.11
+  - notebook
   - octave_kernel
   - octave
   - gnuplot
   - texinfo
-  - rise
+  - pip
+  - pip:
+    - RISE

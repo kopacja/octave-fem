@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Enable RISE at runtime
+jupyter nbextension enable rise --py --sys-prefix
+
+# Start Jupyter
+exec "$@"

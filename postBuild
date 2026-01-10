@@ -1,5 +1,12 @@
 #!/bin/bash
+set -e
 
-# Enable RISE extension
-jupyter-nbextension install rise --py --sys-prefix
-jupyter-nbextension enable rise --py --sys-prefix
+# Install and enable RISE properly
+pip install RISE
+
+# Enable RISE extensions
+jupyter-nbextension install rise --py --user
+jupyter-nbextension enable rise --py --user
+
+# Verify installation
+jupyter nbextension list
