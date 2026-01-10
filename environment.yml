@@ -1,0 +1,10 @@
+name: octave-fem
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - octave_kernel
+  - octave
+  - gnuplot
+  - texinfo
+  - rise
