@@ -2,7 +2,7 @@ name: octave-fem
 channels:
   - conda-forge
 dependencies:
-  - python=3.13
+  - python=3.11
   - notebook>=6.4,<7
   - jupyterlab>=4.0
   - jupyter_contrib_nbextensions
@@ -11,7 +11,7 @@ dependencies:
   - gnuplot
   - texinfo
   - rise
-  - nodejs  # Required for JupyterLab extensions
+  - nodejs
   - pip
   - pip:
     - jupyterlab-rise
