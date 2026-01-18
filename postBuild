@@ -1,8 +1,0 @@
-#!/bin/bash
-set -e
-
-# RISE should be auto-enabled when installed via conda
-# Just verify it's there
-python -c "import rise; print('RISE installed successfully')"
-
-echo "Setup complete"
