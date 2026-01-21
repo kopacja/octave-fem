@@ -4,7 +4,6 @@ channels:
 dependencies:
   - python=3.11
   - notebook>=6.4,<7
-  - jupyterlab>=4.0
   - jupyter_contrib_nbextensions
   - octave_kernel
   - octave
@@ -13,5 +12,3 @@ dependencies:
   - rise
   - nodejs
   - pip
-  - pip:
-    - jupyterlab-rise
