@@ -1,3 +1,14 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -eux
+
+# Make sure octave kernel is registered
+python -m octave_kernel install --sys-prefix
+
+# Optional: print debug info during build (visible in Binder logs)
+python -m octave_kernel.check || echo "octave_kernel check failed!"
+
+jupyter kernelspec list
+jupyter labextension list || true
+
 mkdir -p ~/.jupyter/custom
 cp ${REPO_DIR}/notebooks/custom.css ~/.jupyter/custom/custom.css
