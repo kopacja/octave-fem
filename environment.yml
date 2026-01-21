@@ -10,3 +10,6 @@ dependencies:
   - gnuplot
   - texinfo
   - rise
+  - pip:
+      - rise
+      - octave_kernel
