@@ -1,0 +1,163 @@
+/* Remove blank lines in output cells */
+div.output_area pre {
+    line-height: 1.21429em;
+}
+
+/* Compress output subarea padding */
+.output_subarea {
+    padding: 0px !important;
+}
+
+/* Remove extra margin in output text */
+.output_text pre {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Tighten up spacing between outputs */
+.output_wrapper {
+    margin-top: 5px;
+}
+
+/* Remove blank lines from streams (stdout/stderr) */
+.output_stream {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/* Inline kód v textu */
+.reveal code:not(pre code) {
+    background: transparent !important;
+    border: none !important;
+    color: inherit !important;
+    padding: 0;
+}
+
+/* Blokový kód ``` ``` */
+.reveal pre {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    color: inherit !important;
+    width: 90% !important;
+    max-width: 90% !important;
+    white-space: pre-wrap !important;
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+}
+
+.reveal pre code {
+    background: transparent !important;
+    color: inherit !important;
+    white-space: pre-wrap !important;
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+}
+
+/* Jupyter code cells */
+.reveal .code_cell .input_area,
+.reveal .code_cell .input,
+.reveal .input_area,
+.reveal .CodeMirror,
+.reveal .CodeMirror-gutters,
+.reveal .CodeMirror-sizer {
+    background: transparent !important;
+    border: none !important;
+}
+
+/* Jupyter - bílá základní barva (nezabarvené tokeny) */
+.reveal .CodeMirror pre,
+.reveal .CodeMirror-code {
+    color: white !important;
+}
+
+/* Zachovat syntax highlighting */
+.reveal .cm-keyword { color: #c586c0 !important; }
+.reveal .cm-def { color: #dcdcaa !important; }
+.reveal .cm-variable { color: #9cdcfe !important; }
+.reveal .cm-variable-2 { color: #9cdcfe !important; }
+.reveal .cm-string { color: #ce9178 !important; }
+.reveal .cm-number { color: #b5cea8 !important; }
+.reveal .cm-comment { color: #6a9955 !important; }
+.reveal .cm-builtin { color: #4ec9b0 !important; }
+.reveal .cm-operator { color: #d4d4d4 !important; }
+.reveal .cm-property { color: #9cdcfe !important; }
+
+/* Output cells */
+.reveal .output_area,
+.reveal .output_subarea,
+.reveal .output pre {
+    background: transparent !important;
+    color: white !important;
+}
+
+.homework {
+    border: 2px solid #f0ad4e;
+    border-left: 5px solid #f0ad4e;
+    border-radius: 4px;
+    background-color: #fef9e7;
+    padding: 15px 15px 15px 70px;
+    margin: 15px 0;
+    position: relative;
+    color: #5a5a5a;
+}
+
+.homework::before {
+    content: "💡";
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    right: 12px;
+    font-size: 1.4em;
+}
+
+.homework strong {
+    color: #c87f0a;
+}
+
+.llm-prompt {
+    border: 2px solid #7c3aed;
+    border-left: 5px solid #7c3aed;
+    border-radius: 4px;
+    background-color: #f3e8ff;
+    padding: 15px 15px 15px 70px;
+    margin: 15px 0;
+    position: relative;
+    color: #3b3356;
+}
+
+.llm-prompt::before {
+    content: "🤖";
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    font-size: 1.4em;
+}
+
+.llm-prompt strong {
+    color: #5b21b6;
+}
+
+.reveal ul {
+    margin-top: 0.2em;  /* nebo 0 pro žádnou mezeru */
+}
+
+.reveal table,
+.reveal table tr,
+.reveal table td {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    color: inherit !important;
+    font-size: inherit !important;
+}
+
+.reveal .output_subarea img,
+.reveal .output_subarea svg {
+    /* 
+       1. Invert: Turns Black lines -> White. (Data colors flip)
+       2. Hue-rotate 180deg: Flips data colors back closer to original.
+    */
+    filter: invert(1);
+    
+}

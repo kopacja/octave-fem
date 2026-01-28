@@ -1,0 +1,8 @@
+name: octave-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - octave_kernel
+  - "notebook<7"
+  - rise
